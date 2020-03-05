@@ -1,13 +1,13 @@
 def grid(dimensions, x, y, path):
 
     for direction in path:
-        if direction == 'R':
+        if direction == 'L':
             if y-1 < 0:
                 y = dimensions-1
             else:
                 y -= 1
 
-        if direction == 'L':
+        if direction == 'R':
             if y+1 == dimensions:
                 y = 0
             else:
